@@ -348,7 +348,7 @@
                         </div>
                         <div class="banner-container">
                             
-                            <img src="assets/images/projects/ap3Swagger.webp" class="card-img-top banner" alt="PfpFinder Banner">
+                            <img src="assets/images/projects/projetStageMeteo.webp" class="card-img-top banner" alt="PfpFinder Banner">
                         </div>
                     </div>
                 </div>
@@ -374,7 +374,7 @@
                         </div>
                         <div class="banner-container">
                             
-                            <img src="assets/images/projects/BDD_trigger_v_ps.jpeg" class="card-img-top banner" alt="PfpFinder Banner">
+                            <img src="assets/images/projects/ProjetStageAndroid.webp" class="card-img-top banner" alt="PfpFinder Banner">
                         </div>
                     </div>
                 </div>
@@ -400,7 +400,7 @@
                         </div>
                         <div class="banner-container">
                             
-                            <img src="assets/images/projects/ap3Swagger.webp" class="card-img-top banner" alt="PfpFinder Banner">
+                            <img src="assets/images/projects/ProjetStageDatacenter.webp" class="card-img-top banner" alt="PfpFinder Banner">
                         </div>
                     </div>
                 </div>
@@ -429,7 +429,7 @@
                                     <p class="stacks m-0">HTML | JS | CSS</p>
                                 </div>
                                 <div class="col-3 ms-0">
-                                    <button class="btn btn-sm primary-bg-btn rounded-5" onclick="openPopup('popupAPPerso')">Document associé <i class="bi bi-arrow-up-right-circle-fill"></i></button>
+                                    <button class="btn btn-sm primary-bg-btn rounded-5" onclick="openPopup('popupPerso1')">Document associé <i class="bi bi-arrow-up-right-circle-fill"></i></button>
                                 </div>
                                 
                                 
@@ -441,11 +441,47 @@
                                 <br>Puis chacun leurs tour ils essayent de deviner le code de leur adversaire.<br> A chaque tour 2 indices sont donné sur le code essayé : <br>
                                 - si un ou plusieurs chiffres est bien placé, <br>- sinon si un ou plusieurs chiffres du code essayé sont dans le code à devnier.
                                 <br> Vous pourrez le retrouver sur mon Github.
-                                <br> <span class="underline" onclick="openPopup('popupAPPerso')">Cliquez ici pour consulter mon Github</span>.</p>
+                                <br> <span class="underline" onclick="openPopup('popupPerso1')">Cliquez ici pour consulter mon Github</span>.</p>
                         </div>
                         <div class="banner-container">
                             
                             <img src="assets/images/projects/jeuEnigmeCode.png" class="card-img-top banner" alt="PfpFinder Banner">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-8">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="col-2">
+                                    <img src="assets/images/j.jpg" class="img-fluid icon" alt="PfpFinder Logo">
+                                </div>
+                                <div class="col-7 p-0">
+                                    <p class="card-title">Plugin BakkesMod - Auto Training</p>
+                                    <p class="stacks m-0">C++ | DLL </p>
+                                </div>
+                                <div class="col-3 ms-0">
+                                    <button class="btn btn-sm primary-bg-btn rounded-5" onclick="openPopup('popupPerso2')">Document associé <i class="bi bi-arrow-up-right-circle-fill"></i></button>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="description-container">
+                            <p class="description">Pour ce projet, j'ai créé un plugin BakkesMod en C++ à utiliser dans le jeu Rocket League.<br>
+                                Ce plugin BakkesMod pour Rocket League charge automatiquement une session de jeu libre à la fin de chaque match. <br>
+                                BakkesMod est un framework de modding pour Rocket League.<br>
+                                Il utilise des hooks d'événements pour détecter la fin d'un match et exécute ensuite la commande pour entrer en mode jeu libre.<br>
+                                Pour le moment c'est un projet local, donc il suffit de l'inséré dans les fichiers de BakkesMod pour pouvoir l'utiliser. 
+                                A l'avenir je pourrais songer à l'intégrer dans le site bakkesplugins.com.
+                                Le plugin est simple à installer et utile pour les joueurs souhaitant s'entraîner immédiatement après un match.
+                                <br> <span class="underline" onclick="openPopup('popupPerso2')">Cliquez ici pour consulter mon Github</span>.</p>
+                        </div>
+                        <div class="banner-container">
+                            
+                            <img src="assets/images/projects/BakkesModInjectorCpp.png" class="card-img-top banner" alt="PfpFinder Banner">
                         </div>
                     </div>
                 </div>
@@ -594,13 +630,26 @@
         </div>
     </div>
 
-    <!-- Popup Modal for AP perso -->
-    <div id="popupAPPerso" class="popup">
+    <!-- Popup Modal for Projet perso 1 -->
+    <div id="popupPerso1" class="popup">
         <div class="popup-content">
-            <span class="popup-close" onclick="closePopup('popupAPPerso')">&times;</span>
+            <span class="popup-close" onclick="closePopup('popupPerso1')">&times;</span>
             <h3>Lien associé</h3>
-            <p>Voici le(s) lien(s) lié(s) au projet AP Perso : </p>
-            <a href="https://github.com/LuXy0zzz/Projet_Perso" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">Retrouvez mon Github pour consulter mon Jeu</a>
+            <p>Voici le(s) lien(s) lié(s) au projet Projet Perso Jeu : </p>
+            <a href="https://github.com/LuXy0zzz/Projet_Perso/tree/main/MesProjets/Enicode" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">
+                Retrouvez mon Github pour consulter mon Jeu</a>
+            
+        </div>
+    </div>
+
+    <!-- Popup Modal for Projet perso 2 -->
+    <div id="popupPerso2" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup('popupPerso2')">&times;</span>
+            <h3>Lien associé</h3>
+            <p>Voici le(s) lien(s) lié(s) au projet Projet Perso Plugin : </p>
+            <a href="https://github.com/LuXy0zzz/Projet_Perso/tree/main/MesProjets/Application_Dll1_v0" class="btn btn-sm primary-bg-btn rounded-5" target="_blank">
+                Retrouvez mon Github pour consulter mon Plugin</a>
             
         </div>
     </div>
