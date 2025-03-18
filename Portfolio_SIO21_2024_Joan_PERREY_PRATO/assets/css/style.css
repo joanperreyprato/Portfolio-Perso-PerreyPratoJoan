@@ -1529,51 +1529,83 @@ a:hover{
 /*--------------------------------------------------------------
 # VT Section
 --------------------------------------------------------------*/
-#vt{
-    padding: 100px 0px;
-    min-height: 100vh;
+/* Styles par défaut pour les grands écrans */
+#vt {
+    padding: 100px 0px !important;
+    min-height: 100vh !important;
     background-image: url(assets/images/grid.png);
     background-size: contain;
+    position: relative;
 }
 
-.article-card{
+.article-card {
     background-color: transparent;
-    padding: 10px;
-    border-radius: 24px;
+    padding: 10px !important;
+    border-radius: 24px !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 0 1px 0 rgb(139, 80, 216), 0 0 0.5px 0.5px rgb(151, 74, 228);
     -webkit-box-shadow: 0 0 1px 0 rgba(255, 153, 0, 0.979), 0 0 0.5px 0.5px rgba(145, 81, 209, 0.993);
+    margin: 0 auto !important;
+    width: 120% !important;
+    transform: translateX(-8%); /* Centre horizontalement */
 }
 
-.article-card .banner-container{
+/* Media Query pour les tablettes et les grands téléphones */
+@media (max-width: 1024px) {
+    .article-card {
+        width: 100% !important;
+        transform: translateX(0); /* Pas besoin de centrer avec transform */
+        margin: 0 auto !important;
+    }
+}
+
+/* Media Query pour les téléphones */
+@media (max-width: 768px) {
+    .article-card {
+        width: 90% !important;
+        padding: 15px !important;
+        border-radius: 16px !important;
+    }
+}
+
+/* Media Query pour les très petits écrans */
+@media (max-width: 480px) {
+    .article-card {
+        width: 100% !important;
+        padding: 10px !important;
+        border-radius: 12px !important;
+    }
+}
+
+.article-card .banner-container {
     position: relative;
-    border-radius: 12px;
+    border-radius: 12px !important;
     overflow: hidden;
 }
 
-.article-card .badge{
+.article-card .badge {
     margin: 10px 10px 0px 0px;
     font-size: 15px;
     background: var(--primary-gradient-color);
 }
 
-.article-card .banner{
+.article-card .banner {
     border-radius: inherit;
 }
 
-.article-card .card-title{
+.article-card .card-title {
     position: relative;
     font-size: 20px;
     font-weight: 900;
 }
 
-.article-card .card-text{
+.article-card .card-text {
     font-size: 14px;
     color: var(--muted-text);
 }
 
-.article-card .read-more{
+.article-card .read-more {
     position: relative;
     color: var(--text-color);
     text-transform: uppercase;
@@ -1595,6 +1627,7 @@ a:hover{
 .article-card .read-more:hover::after {
     width: 90% !important;
 }
+
 
 /*--------------------------------------------------------------
 # CV Section
@@ -1821,6 +1854,12 @@ a:hover{
     }
 }
 
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+}
 
 
 
