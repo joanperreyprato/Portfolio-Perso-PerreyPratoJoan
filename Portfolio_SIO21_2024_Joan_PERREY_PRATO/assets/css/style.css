@@ -1865,4 +1865,46 @@ a:hover{
 
 
 
+/* bouton ressources de Projets*/
+.short-height-btn {
+    margin-left: 80px !important;
+    width: 80% !important;
+    line-height: 2 !important;
+}
 
+
+
+.pretty-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pretty-btn i {
+    font-size: 1.2rem;
+}
+
+.pretty-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    opacity: 0.9;
+}
+
+.btn-blue {
+    background: linear-gradient(135deg, #df768b, #df133c);
+}
+
+.btn-red {
+    background: linear-gradient(135deg, #b871df, #9a18e0);
+}
+
+.btn-green {
+    background: linear-gradient(135deg, #6cc1e0, #05adeb);
+}
