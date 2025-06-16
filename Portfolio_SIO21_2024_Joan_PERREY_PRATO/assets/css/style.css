@@ -1834,27 +1834,32 @@ a:hover{
 /* Style pour l'aperçu du CV */
 .cv-preview {
     width: 100%;
-    max-width: 1000px; /* Augmente la largeur */
-    height: 1200px; /* Augmente la hauteur */
+    max-width: 1000px;
+    aspect-ratio: 1/1.414; /* Proportion A4 portrait (≈ 210×297 mm) */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transform: scale(0.98); /* Réduction légère du zoom */
+    transform: scale(0.98);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Désactiver l'aperçu sur mobile */
 @media (max-width: 768px) {
     .cv-preview-container {
-        display: none; /* Masquer l'aperçu du CV sur mobile */
+        display: flex;
+        padding: 0;
     }
 
-    /* Bouton de téléchargement centré et ajusté pour mobile */
+    .cv-preview {
+        max-width: 100%;
+        aspect-ratio: 1/1.414;
+    }
+
     .download-btn {
         width: 90%;
         font-size: 16px;
         padding: 10px 20px;
     }
 }
+
 
 .center-image {
     display: block;
