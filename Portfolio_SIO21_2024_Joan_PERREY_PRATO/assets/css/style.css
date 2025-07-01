@@ -1913,3 +1913,106 @@ a:hover{
 .btn-green {
     background: linear-gradient(135deg, #6cc1e0, #05adeb);
 }
+
+
+/* Effet d'illumination ou glow sur hover */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+    color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+      font-size: 18px;
+  animation: bounce 2s infinite;
+}
+
+.tooltip-container-2{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tooltip-container-2:hover {
+  animation: none; /* Arrête l'animation au survol */
+}
+
+.tooltip-container:hover {
+  color: #0056b3;
+  animation: none; /* Arrête l'animation au survol */
+}
+
+.tooltip-container .tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  max-width: 300px;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  pointer-events: none;
+}
+
+.tooltip-container .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.cursor-indicator {
+  position: absolute;
+  top: 20px; /* Ajustez selon la taille de votre image */
+  right: -22px; /* Ajustez selon la taille de votre image */
+  width: 30px; /* Définissez la largeur souhaitée */
+  height: auto; /* Conservez les proportions */
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4); /* Réduisez l'échelle de l'animation */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
