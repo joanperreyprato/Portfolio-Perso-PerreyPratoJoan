@@ -654,11 +654,40 @@ a:hover{
 }
 
 /*--------------------------------------------------------------
+# Methods Section
+--------------------------------------------------------------*/
+
+#methods{
+    padding: 100px 0px 80px 0px;
+}
+
+.skill-icon{
+    font-size: 45px;
+    padding: 8px;
+    line-height: 1;
+}
+
+#methods .skill{
+    height: 100%;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
 # Timeline Section
 --------------------------------------------------------------*/
 
 #timelines{
     padding: 100px 0px 80px 0px;
+}
+
+/*--------------------------------------------------------------
+# Projects Section 0 Projet Ingenieur & Professionnel
+--------------------------------------------------------------*/
+
+#projectsIngenieur{
+    padding: 100px 0px 80px 0px;
+    background-image: url(/assets/images/grid.png);
+    background-size: contain;
 }
 
 /*--------------------------------------------------------------
@@ -1456,6 +1485,16 @@ a:hover{
     
 .blogs-card .read-more:hover::after {
     width: 90% !important;
+}
+
+/*--------------------------------------------------------------
+# Experiences / Formation Section
+--------------------------------------------------------------*/
+#experiences,
+#formation{
+    padding: 100px 0px 0px 0px;
+    background-image: url(assets/images/grid.png);
+    background-size: contain;
 }
 
 /*--------------------------------------------------------------
